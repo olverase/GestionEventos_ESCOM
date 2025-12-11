@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "245788486656",
+    "project_id": "gestioneventos-escom",
+    "storage_bucket": "gestioneventos-escom.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:245788486656:android:8d2bca303019fa157f7ce5",
+        "android_client_info": {
+          "package_name": "mx.edu.escom.gestion_eventos"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFTsfZjGe4K5WzoAPxvpvGCGvsdQ1SZpY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
