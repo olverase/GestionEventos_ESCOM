@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
-import 'admin/mis_eventos_screen.dart'; // Importante: Aquí traemos tu pantalla
+import 'auth/login_screen.dart'; // <--- Esto es lo importante
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -21,8 +21,8 @@ class MainApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
       ),
       // AQUÍ ESTÁ EL CAMBIO:
-      // En lugar de mostrar texto, mostramos tu formulario de crear eventos
-      home: const MisEventosScreen(),
+      // Debe decir LoginScreen(), NO Scaffold(...)
+      home: const LoginScreen(),
     );
   }
 }

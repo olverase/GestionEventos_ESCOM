@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import '../models/evento_model.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 
 class CrearEventoScreen extends StatefulWidget {
   final Evento? evento; // Si es null, es CREAR. Si tiene datos, es EDITAR.
@@ -77,7 +78,7 @@ class _CrearEventoScreenState extends State<CrearEventoScreen> {
           fecha: fechaFinal,
           ubicacion: _lugarController.text,
           categoria: _categoria,
-          organizadorId: 'ID_TEMPORAL_DEL_ORGANIZADOR',
+          organizadorId: FirebaseAuth.instance.currentUser!.uid,
           asistentes: widget.evento?.asistentes ??
               [], // Mantener asistentes si se edita
         );
